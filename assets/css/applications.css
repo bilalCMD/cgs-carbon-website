@@ -17,9 +17,6 @@
 /* ---------- application sections ---------- */
 .app-section{border-top:1px solid var(--line)}
 .app-section:first-of-type{border-top:0}
-.app-media{position:relative;margin:0}
-.app-media img{width:100%;border-radius:var(--r-lg);aspect-ratio:4/3;object-fit:cover}
-.app-media figcaption{margin-top:12px;font-size:.82rem;color:var(--slate)}
 .app-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:600;
   letter-spacing:.185em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
 .app-kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
