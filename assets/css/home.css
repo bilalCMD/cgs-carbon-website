@@ -27,16 +27,41 @@
   letter-spacing:-.05em;line-height:1.1}
 .herofacts .v{display:block;font-size:.83rem;color:var(--slate);margin-top:6px;line-height:1.45}
 
-/* ---------- split photo panels (Birchtech signature) ---------- */
-.panels{display:grid;grid-template-columns:1fr 1fr}
-.panel{position:relative;min-height:520px;display:flex;align-items:flex-end;padding:56px 52px;
-  overflow:hidden;isolation:isolate}
-.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.panel::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,rgba(10,46,54,.18) 0%,rgba(10,46,54,.55) 52%,rgba(10,46,54,.9) 100%)}
+/* ---------- split photo panels (Birchtech signature) ----------
+   Mirrors the parent site's feature tiles. Each panel is a flex child, so
+   hovering one grows it while its neighbour narrows; the photo eases in at the
+   same time. The tint is a left-heavy gradient rather than a full wash, which
+   holds the copy legible while leaving the right of the photo readable. */
+.panels{display:flex;gap:0}
+.panels:hover .panel{flex-grow:.82}
+.panels:hover .panel:hover{flex-grow:1.5}
+.panel{position:relative;display:flex;flex-direction:column;justify-content:center;
+  flex:1 1 0;min-width:0;min-height:560px;padding:clamp(36px,4vw,60px);color:#fff;
+  isolation:isolate;overflow:hidden;text-decoration:none;
+  transition:flex-grow .55s var(--ease)}
+.panel:hover{text-decoration:none}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  transition:transform .7s var(--ease)}
+.panel:hover img{transform:scale(1.05)}
+/* Two tints, matching the hues the parent site gives its own paired tiles:
+   the water side takes Birchtech's clean-water teal, the gas side its
+   clean-air sage. Paired this way the two panels read as one graphic. */
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(100deg,rgba(29,118,134,.92) 0%,rgba(29,118,134,.58) 45%,rgba(29,118,134,.16) 100%)}
+.panel-water::after{background:
+  linear-gradient(100deg,rgba(6,114,141,.93) 0%,rgba(6,114,141,.56) 45%,rgba(6,114,141,.15) 100%)}
+.panel-gas::after{background:
+  linear-gradient(100deg,rgba(68,126,123,.93) 0%,rgba(68,126,123,.56) 45%,rgba(68,126,123,.15) 100%)}
+.panel-inner{max-width:560px}
 .panel h2,.panel h3{color:#fff}
-.panel p{color:#D7E7EA;max-width:44ch;margin-top:16px}
-.panel .arrow-link{color:#fff;margin-top:22px}
+.panel h2{font-size:clamp(2rem,3.6vw,3rem);margin-bottom:18px}
+.panel p{color:#fff;max-width:42ch;font-weight:500;margin:0}
+.panel .pills{margin:24px 0 30px}
+.panel .pill{font-weight:700;border-color:rgba(255,255,255,.45)}
+.panel .btns{margin-top:0}
+.panel .btn-light:hover{background:linear-gradient(90deg,var(--teal) 0%,var(--teal-deep) 100%);
+  color:#fff;transform:none}
+.panel .btn-light:hover .ico{background:rgba(255,255,255,.22);color:#fff}
 
 /* ---------- full-bleed duotone band ---------- */
 .band{position:relative;padding:132px 0;background:var(--teal-ink);overflow:hidden;isolation:isolate}
@@ -67,8 +92,10 @@
   .herofacts ul{grid-template-columns:1fr 1fr}
   .herofacts li{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-right:16px}
   .herofacts li:nth-child(-n+2){border-top:0}
-  .panels{grid-template-columns:1fr}
-  .panel{min-height:400px;padding:44px 28px}
+  /* stack the tiles and disable the grow/shrink interaction on touch */
+  .panels{flex-direction:column}
+  .panels:hover .panel,.panels:hover .panel:hover{flex-grow:1}
+  .panel{min-height:440px}
   .band{padding:92px 0}
 }
 @media(max-width:620px){
