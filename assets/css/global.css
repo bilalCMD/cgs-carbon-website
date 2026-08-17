@@ -246,11 +246,34 @@ section.tight{padding:72px 0}
   letter-spacing:.14em;color:var(--teal-ink);background:rgba(255,255,255,.93);
   border-radius:999px;padding:8px 15px}
 
+/* light variant — product shots photographed on white.
+   The product floats on a tinted ground (multiply blends the shot's white
+   background away) and the caption sits in its own small panel, so no dark
+   gradient washes out the material. */
+.media-obj.on-light{border:1px solid var(--line);
+  background:linear-gradient(158deg,#FBFDFD 0%,#E7F1F2 100%);
+  box-shadow:0 18px 44px -26px rgba(10,46,54,.24)}
+.media-obj.on-light img{object-fit:contain;padding:34px 30px 78px;mix-blend-mode:multiply}
+.media-obj.on-light::after{content:none}
+.media-obj.on-light .mo-cap{left:16px;right:16px;bottom:16px;padding:14px 17px;
+  background:rgba(255,255,255,.93);border:1px solid var(--line);border-radius:var(--r)}
+.media-obj.on-light .mo-kicker{color:var(--teal);margin-bottom:5px}
+.media-obj.on-light .mo-cap h3{color:var(--ink);font-size:1.05rem}
+.media-obj.on-light .mo-cap p{color:var(--slate)}
+.media-obj.on-light .mo-num{background:var(--teal);color:#fff}
+
 /* stacked two-photo collage */
 .photo-duo{position:relative;padding:0 0 62px}
 .photo-duo .pd-main .mo-cap{padding-right:46%}
 .photo-duo .pd-over{position:absolute;right:-6px;bottom:0;width:54%;border:6px solid #fff;
   box-shadow:0 26px 60px -26px rgba(10,46,54,.55)}
+.photo-duo .pd-over.on-light{border-color:#fff;
+  box-shadow:0 0 0 1px var(--line),0 26px 60px -26px rgba(10,46,54,.32)}
+/* the on-light caption is a self-contained panel, so drop the gradient-era insets.
+   It stops short of the overlapping card rather than running underneath it. */
+.photo-duo .pd-main.on-light .mo-cap{padding:14px 17px;right:48%}
+.photo-duo .pd-over.on-light img{padding:22px 20px 58px}
+.photo-duo .pd-over.on-light .mo-cap{padding:11px 13px;left:12px;right:12px;bottom:12px}
 .photo-duo .pd-over img{aspect-ratio:1/1}
 .photo-duo .pd-over .mo-cap{padding:16px 18px}
 .pd-chip{position:absolute;top:-16px;left:-16px;z-index:3;display:flex;align-items:center;gap:11px;
@@ -266,6 +289,7 @@ section.tight{padding:72px 0}
 @media(max-width:620px){
   .photo-duo{padding:0}
   .photo-duo .pd-main .mo-cap{padding-right:26px}
+  .photo-duo .pd-main.on-light .mo-cap{right:16px;padding:14px 17px}
   .photo-duo .pd-over{position:static;width:100%;margin-top:18px;border:0}
   .photo-duo .pd-over img{aspect-ratio:4/3}
   .pd-chip{top:14px;left:14px}

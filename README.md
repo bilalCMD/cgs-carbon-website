@@ -44,10 +44,25 @@ No build step. Open `index.html` directly, or serve the folder:
 python -m http.server 8000
 ```
 
+## Photography
+
+Every section has its own photo — 23 in total, one per slot, no image reused across two places.
+All are 1920px-wide JPEGs from [Unsplash](https://unsplash.com) (Unsplash License: free for
+commercial use, attribution not required). Below-the-fold images carry `loading="lazy"`.
+
+Product shots (`hok-granules*`, `hok-powder*`) are photographed on white and use the
+`.media-obj.on-light` treatment: the shot is blended onto a tinted ground with `mix-blend-mode`
+so the material floats, with the caption in its own light panel instead of a dark gradient.
+
+These are stand-ins. Replace them with real CGS Carbon and RWE plant photography before launch —
+particularly the product shots, which should show actual HOK® grades.
+
 ## Before launch
 
 Placeholder markers (dashed boxes, `[like this]`) flag facts to confirm: contact details,
-leadership, exact grade designations, legal effective dates, and the form backend.
+leadership, exact grade designations, legal effective dates, and the form backend. Swap the
+stock photography for licensed CGS Carbon imagery, and consider serving WebP/AVIF variants —
+the JPEG set totals roughly 10 MB.
 
 `CGS Carbon Website Sample.html` is the original single-file design reference the site was
 split from.

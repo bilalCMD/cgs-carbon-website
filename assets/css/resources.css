@@ -3,6 +3,8 @@
    Document cards, FAQ accordion, glossary list.
    ============================================================ */
 
+.page-hero.on-photo{background-image:url(../img/resources-hero.jpg)}
+
 /* ---------- document cards ---------- */
 .doc-card .kind{font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
   color:var(--teal);margin-bottom:14px}

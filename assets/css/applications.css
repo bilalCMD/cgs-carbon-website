@@ -3,7 +3,7 @@
    Alternating application sections, in-page jump nav.
    ============================================================ */
 
-.page-hero.on-photo{background-image:url(../img/panel-water.jpg)}
+.page-hero.on-photo{background-image:url(../img/apps-hero.jpg)}
 
 /* ---------- in-page jump nav ---------- */
 .jumpnav{position:sticky;top:82px;z-index:60;background:#fff;border-bottom:1px solid var(--line)}

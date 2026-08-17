@@ -3,7 +3,7 @@
    Parent-company panel, principles list, manufacturing figure.
    ============================================================ */
 
-.page-hero.on-photo{background-image:url(../img/panel-gas.jpg)}
+.page-hero.on-photo{background-image:url(../img/about-hero.jpg)}
 
 /* ---------- parent company panel ---------- */
 .parent-panel{background:var(--dark);border-radius:var(--r-lg);padding:52px 48px;color:var(--silver)}
