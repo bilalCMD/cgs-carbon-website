@@ -1,0 +1,11 @@
+/* ============================================================
+   CGS Carbon — legal pages (privacy, terms)
+   Simple long-form prose layout.
+   ============================================================ */
+
+.legal-body{padding:72px 0 104px}
+.legal-body h2{font-size:1.45rem;margin:44px 0 14px;letter-spacing:-.035em}
+.legal-body h2:first-child{margin-top:0}
+.legal-body p,.legal-body li{color:var(--slate);font-size:.98rem}
+.legal-body ul{margin:0 0 1.2em;padding-left:1.2em}
+.legal-updated{font-size:.85rem;color:var(--slate);margin-top:18px}

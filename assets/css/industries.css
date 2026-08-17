@@ -1,0 +1,21 @@
+/* ============================================================
+   CGS Carbon — industries page styles
+   Industry card grid and duty-matrix table.
+   ============================================================ */
+
+.page-hero.on-photo{background-image:url(../img/hero-water-treatment.jpg)}
+
+/* ---------- industry cards ---------- */
+.ind-card .duty{font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:14px}
+.ind-card ul{list-style:none;margin:16px 0 0;padding:0}
+.ind-card li{position:relative;padding-left:22px;margin-bottom:9px;font-size:.92rem;color:var(--slate)}
+.ind-card li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;
+  background:var(--teal)}
+
+/* ---------- duty matrix ---------- */
+.matrix td .yes{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;
+  background:rgba(29,118,134,.12)}
+.matrix td .yes::after{content:"";width:8px;height:4.5px;border-left:2px solid var(--teal);
+  border-bottom:2px solid var(--teal);transform:rotate(-45deg) translate(1px,-1px)}
+.matrix td .dash{color:var(--silver)}

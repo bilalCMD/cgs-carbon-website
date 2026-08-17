@@ -1,0 +1,78 @@
+/* ============================================================
+   CGS Carbon — home page styles
+   Hero, fact strip, split photo panels, duotone band, quote.
+   ============================================================ */
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1200px 520px at 82% 8%,rgba(29,118,134,.10),transparent 62%),
+  linear-gradient(180deg,var(--tint),#fff 72%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:64px;
+  align-items:center;padding-top:96px;padding-bottom:104px}
+.hero h1 .fade{color:#4E93A3}
+.hero .lead{margin-top:26px;max-width:52ch}
+.hero-media{position:relative}
+.hero-media img{width:100%;height:auto;border-radius:var(--r-lg);aspect-ratio:4/3;object-fit:cover}
+.hero-badge{position:absolute;left:-38px;bottom:-38px;width:126px;height:126px;background:#fff;
+  border-radius:50%;display:grid;place-items:center;padding:16px;box-shadow:var(--shadow)}
+.hero-badge img{width:100%;height:100%}
+.wave{position:absolute;right:-8%;top:66%;width:58%;opacity:.45;pointer-events:none}
+
+/* ---------- fact strip ---------- */
+.herofacts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.herofacts ul{display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:0;padding:0}
+.herofacts li{margin:0;padding:26px 28px;border-left:1px solid var(--line)}
+.herofacts li:first-child{border-left:0;padding-left:0}
+.herofacts .k{display:block;font-size:1.55rem;font-weight:700;color:var(--ink);
+  letter-spacing:-.05em;line-height:1.1}
+.herofacts .v{display:block;font-size:.83rem;color:var(--slate);margin-top:6px;line-height:1.45}
+
+/* ---------- split photo panels (Birchtech signature) ---------- */
+.panels{display:grid;grid-template-columns:1fr 1fr}
+.panel{position:relative;min-height:520px;display:flex;align-items:flex-end;padding:56px 52px;
+  overflow:hidden;isolation:isolate}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.panel::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(10,46,54,.18) 0%,rgba(10,46,54,.55) 52%,rgba(10,46,54,.9) 100%)}
+.panel h2,.panel h3{color:#fff}
+.panel p{color:#D7E7EA;max-width:44ch;margin-top:16px}
+.panel .arrow-link{color:#fff;margin-top:22px}
+
+/* ---------- full-bleed duotone band ---------- */
+.band{position:relative;padding:132px 0;background:var(--teal-ink);overflow:hidden;isolation:isolate}
+.band img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.62}
+.band::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(10,46,54,.75),rgba(10,46,54,.85))}
+.band h2,.band h3{color:#fff}
+.band p{color:#D7E7EA}
+.band .eyebrow{color:#8FD3DF}
+
+/* ---------- pull quote ---------- */
+.quote{max-width:900px;margin:0 auto;text-align:center}
+.quote .qm{font-size:3rem;color:var(--teal);line-height:1;margin-bottom:10px}
+.quote blockquote{margin:0;font-size:clamp(1.7rem,3.2vw,2.6rem);font-weight:700;
+  letter-spacing:-.055em;line-height:1.14;color:var(--ink)}
+.quote figcaption{margin-top:28px;font-size:.92rem;color:var(--slate)}
+.quote figcaption strong{display:block;color:var(--ink);font-size:1rem}
+
+/* ---------- responsive ---------- */
+@media(max-width:1080px){
+  .hero .wrap{gap:44px}
+}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:56px;padding-bottom:64px;gap:44px}
+  .hero-media{order:-1;max-width:560px}
+  .hero-badge{width:92px;height:92px;left:-14px;bottom:-18px;padding:11px}
+  .wave{display:none}
+  .herofacts ul{grid-template-columns:1fr 1fr}
+  .herofacts li{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-right:16px}
+  .herofacts li:nth-child(-n+2){border-top:0}
+  .panels{grid-template-columns:1fr}
+  .panel{min-height:400px;padding:44px 28px}
+  .band{padding:92px 0}
+}
+@media(max-width:620px){
+  .herofacts ul{grid-template-columns:1fr}
+  .herofacts li{border-top:1px solid var(--line);padding:20px 0}
+  .herofacts li:first-child{border-top:0}
+}

@@ -1,0 +1,31 @@
+/* ============================================================
+   CGS Carbon — about page styles
+   Parent-company panel, principles list, manufacturing figure.
+   ============================================================ */
+
+.page-hero.on-photo{background-image:url(../img/panel-gas.jpg)}
+
+/* ---------- parent company panel ---------- */
+.parent-panel{background:var(--dark);border-radius:var(--r-lg);padding:52px 48px;color:var(--silver)}
+.parent-panel h3{color:#fff;font-size:1.6rem;margin-bottom:14px}
+.parent-panel .wordmark{display:inline-block;color:#fff;font-weight:700;letter-spacing:.16em;
+  font-size:1.15rem;margin-bottom:22px}
+.parent-panel p{color:var(--silver)}
+.parent-panel .tickers{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 0;padding:0;list-style:none}
+.parent-panel .tickers li{margin:0;font-size:.78rem;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:#7FC5D3;border:1px solid rgba(127,197,211,.4);
+  border-radius:2px;padding:7px 12px}
+
+/* ---------- principles ---------- */
+.principles{list-style:none;margin:0;padding:0;counter-reset:pr}
+.principles li{counter-increment:pr;border-top:1px solid var(--line);padding:26px 0 26px 66px;
+  position:relative;margin:0}
+.principles li:last-child{border-bottom:1px solid var(--line)}
+.principles li::before{content:counter(pr,decimal-leading-zero);position:absolute;left:0;top:26px;
+  font-size:.85rem;font-weight:600;letter-spacing:.1em;color:var(--teal)}
+.principles h3{margin-bottom:8px}
+.principles p{color:var(--slate);font-size:.97rem;margin:0}
+
+@media(max-width:620px){
+  .parent-panel{padding:34px 26px}
+}
