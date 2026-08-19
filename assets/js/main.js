@@ -1,5 +1,5 @@
 /* ============================================================
-   Columbiana Grinding Services — shared behavior for every page.
+   CGS Carbon — shared behavior for every page.
    Mobile drawer, mega-menu dropdowns, scroll reveals with stagger,
    header state, scroll progress, number count-up, hero parallax,
    and the inquiry form prototype.

@@ -1,5 +1,5 @@
 /* ============================================================
-   Columbiana Grinding Services — shared site header partial.
+   CGS Carbon — shared site header partial.
    Edit the markup here once; every page picks it up via
    <script src="partials/header.js"></script>.
    ============================================================ */
@@ -10,17 +10,17 @@
 
   var html =
     '<div class="topbar"><div class="wrap">' +
-      '<div><strong>Columbiana Grinding Services, LLC</strong> &mdash; Processing Activated Carbon</div>' +
-      '<div class="tb-r">Established 2008 &middot; Columbiana, Ohio &middot; 330-457-2599</div>' +
+      '<div><strong>CGS Carbon, Inc.</strong> &mdash; a subsidiary of Birchtech</div>' +
+      '<div class="tb-r">Processing Activated Carbon &middot; Established 2008 &middot; Columbiana, Ohio</div>' +
     '</div></div>' +
 
     '<header class="site-header">' +
       '<div class="wrap hdr">' +
-        '<a class="brand" href="index.html" aria-label="Columbiana Grinding Services &mdash; home">' +
+        '<a class="brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
           '<img src="assets/img/logo-mark.svg" alt="" width="42" height="42">' +
           '<span class="brand-txt">' +
-            '<span class="brand-name">Columbiana <span>Grinding</span></span>' +
-            '<span class="brand-sub">Services, LLC</span>' +
+            '<span class="brand-name">CGS <span>Carbon</span></span>' +
+            '<span class="brand-sub">A Birchtech Company</span>' +
           '</span>' +
         '</a>' +
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +

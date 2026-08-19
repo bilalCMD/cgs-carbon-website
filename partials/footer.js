@@ -1,5 +1,5 @@
 /* ============================================================
-   Columbiana Grinding Services — shared site footer partial.
+   CGS Carbon — shared site footer partial.
    Copy is limited to statements verified on columbianagrinding.com.
    ============================================================ */
 (function () {
@@ -11,11 +11,11 @@
       '<div class="wrap">' +
 
         '<div class="f-top">' +
-          '<a class="f-brand" href="index.html" aria-label="Columbiana Grinding Services &mdash; home">' +
+          '<a class="f-brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
             '<img src="assets/img/logo-mark.svg" alt="" width="44" height="44">' +
             '<span class="brand-txt">' +
-              '<span class="brand-name">Columbiana <span>Grinding</span></span>' +
-              '<span class="brand-sub">Services, LLC</span>' +
+              '<span class="brand-name">CGS <span>Carbon</span></span>' +
+              '<span class="brand-sub">A Birchtech Company</span>' +
             '</span>' +
           '</a>' +
           '<a class="btn btn-primary" href="contact.html">Get in touch' + ARROW + '</a>' +
@@ -52,15 +52,17 @@
           '</div>' +
           '<div>' +
             '<div class="f-parent">' +
-              '<div class="lbl">Columbiana Grinding Services, LLC</div>' +
-              '<p>Processing Activated Carbon for Various Industries. Established in 2008. Specializing in HOK&reg; Activated Lignite.</p>' +
+              '<div class="lbl">Parent company</div>' +
+              '<span style="display:inline-block;color:#fff;font-weight:700;letter-spacing:.14em;font-size:.95rem;margin-bottom:14px">BIRCHTECH</span>' +
+              '<p>CGS Carbon, Inc. is a subsidiary of Birchtech. <a href="https://www.birchtech.com/" rel="noopener">birchtech.com</a></p>' +
+              '<p style="margin-top:12px">Processing Activated Carbon for Various Industries. Established in 2008. Specializing in HOK&reg; Activated Lignite.</p>' +
               '<p style="margin-top:12px">Columbiana, Ohio, close to the Ohio-Pennsylvania state line and approximately 20 miles south of Youngstown.</p>' +
             '</div>' +
           '</div>' +
         '</div>' +
 
         '<div class="f-bottom">' +
-          '<div>&copy; <span data-year>2026</span> Columbiana Grinding Services, LLC. All rights reserved.</div>' +
+          '<div>&copy; <span data-year>2026</span> CGS Carbon, Inc. All rights reserved.</div>' +
           '<ul>' +
             '<li><a href="privacy.html">Privacy Policy</a></li>' +
             '<li><a href="terms.html">Terms of Use</a></li>' +

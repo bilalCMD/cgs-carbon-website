@@ -1,6 +1,6 @@
-# Columbiana Grinding Services — Website
+# CGS Carbon — Website
 
-Multi-page static website for **Columbiana Grinding Services, LLC** — processing activated carbon
+Multi-page static website for **CGS Carbon, Inc.** — processing activated carbon
 for various industries, established 2008, specializing in HOK® Activated Lignite.
 
 ## Content rule
@@ -59,8 +59,7 @@ python -m http.server 8000
 ## Photography
 
 Stock stand-ins from [Unsplash](https://unsplash.com) (Unsplash License), 1920px wide, one photo
-per slot. Below-the-fold images are lazy-loaded. Replace these with real Columbiana Grinding
-Services facility and product photography before launch.
+per slot. Below-the-fold images are lazy-loaded. Replace these with real CGS Carbon facility and product photography before launch.
 
 ## Before launch — content QA
 
