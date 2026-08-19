@@ -1,0 +1,10 @@
+/* ============================================================
+   Columbiana Grinding Services — services page styles
+   Service summary cards and the to-be-confirmed notice.
+   ============================================================ */
+
+.page-hero.on-photo{background-image:url(../img/resources-hero.jpg)}
+
+/* ---------- service cards ---------- */
+.svc-card .kind,.card-teal .kind{font-size:.72rem;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:14px}

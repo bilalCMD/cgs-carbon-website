@@ -1,7 +1,6 @@
 /* ============================================================
-   CGS Carbon — shared site footer partial.
-   Edit the markup here once; every page picks it up via
-   <script src="partials/footer.js"></script>.
+   Columbiana Grinding Services — shared site footer partial.
+   Copy is limited to statements verified on columbianagrinding.com.
    ============================================================ */
 (function () {
   'use strict';
@@ -12,11 +11,11 @@
       '<div class="wrap">' +
 
         '<div class="f-top">' +
-          '<a class="f-brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
+          '<a class="f-brand" href="index.html" aria-label="Columbiana Grinding Services &mdash; home">' +
             '<img src="assets/img/logo-mark.svg" alt="" width="44" height="44">' +
             '<span class="brand-txt">' +
-              '<span class="brand-name">CGS <span>Carbon</span></span>' +
-              '<span class="brand-sub">A Birchtech Company</span>' +
+              '<span class="brand-name">Columbiana <span>Grinding</span></span>' +
+              '<span class="brand-sub">Services, LLC</span>' +
             '</span>' +
           '</a>' +
           '<a class="btn btn-primary" href="contact.html">Get in touch' + ARROW + '</a>' +
@@ -24,47 +23,41 @@
 
         '<div class="f-cols">' +
           '<div>' +
-            '<h2>Product</h2>' +
-            '<ul>' +
-              '<li><a href="hok-activated-lignite.html">HOK&reg; Activated Lignite</a></li>' +
-              '<li><a href="hok-activated-lignite.html#grades">Product grades</a></li>' +
-              '<li><a href="hok-activated-lignite.html#technical">Technical data</a></li>' +
-              '<li><a href="hok-activated-lignite.html#supply">Packaging &amp; supply</a></li>' +
-            '</ul>' +
-          '</div>' +
-          '<div>' +
-            '<h2>Applications</h2>' +
-            '<ul>' +
-              '<li><a href="applications.html#biological">Biological wastewater</a></li>' +
-              '<li><a href="applications.html#adsorptive">Adsorptive treatment</a></li>' +
-              '<li><a href="applications.html#industrial">Industrial &amp; leachate</a></li>' +
-              '<li><a href="industries.html">Industries we serve</a></li>' +
-            '</ul>' +
-          '</div>' +
-          '<div>' +
             '<h2>Company</h2>' +
             '<ul>' +
-              '<li><a href="about.html">About CGS Carbon</a></li>' +
-              '<li><a href="resources.html">Resources</a></li>' +
-              '<li><a href="news.html">News &amp; insights</a></li>' +
+              '<li><a href="about.html">About</a></li>' +
+              '<li><a href="services.html">Services</a></li>' +
+              '<li><a href="industries.html">Industries</a></li>' +
               '<li><a href="contact.html">Contact</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
+            '<h2>Specialty</h2>' +
+            '<ul>' +
+              '<li><a href="hok-activated-lignite.html">HOK&reg; Activated Lignite</a></li>' +
+              '<li><a href="services.html">Activated Carbon Processing</a></li>' +
+            '</ul>' +
+          '</div>' +
+          '<div>' +
+            '<h2>Contact</h2>' +
+            '<ul>' +
+              '<li>41738 Esterly Drive</li>' +
+              '<li>Columbiana, Ohio 44408</li>' +
+              '<li><a href="tel:+13304572599">330-457-2599</a></li>' +
+            '</ul>' +
+            '<div class="f-contact"><span class="ph">[Email address to be confirmed]</span></div>' +
+          '</div>' +
+          '<div>' +
             '<div class="f-parent">' +
-              '<div class="lbl">Parent company</div>' +
-              '<span style="display:inline-block;color:#fff;font-weight:700;letter-spacing:.14em;font-size:.95rem;margin-bottom:14px">BIRCHTECH</span>' +
-              '<p>CGS Carbon, Inc. is a subsidiary of Birchtech, an environmental technology company focused on clean air and clean water. <a href="https://www.birchtech.com/" rel="noopener">birchtech.com</a></p>' +
-            '</div>' +
-            '<div class="f-contact">' +
-              '<span class="ph">[Phone number to be added]</span>' +
-              '<span class="ph">[Email address to be added]</span>' +
+              '<div class="lbl">Columbiana Grinding Services, LLC</div>' +
+              '<p>Processing Activated Carbon for Various Industries. Established in 2008. Specializing in HOK&reg; Activated Lignite.</p>' +
+              '<p style="margin-top:12px">Columbiana, Ohio, close to the Ohio-Pennsylvania state line and approximately 20 miles south of Youngstown.</p>' +
             '</div>' +
           '</div>' +
         '</div>' +
 
         '<div class="f-bottom">' +
-          '<div>&copy; <span data-year>2026</span> CGS Carbon, Inc. All rights reserved.</div>' +
+          '<div>&copy; <span data-year>2026</span> Columbiana Grinding Services, LLC. All rights reserved.</div>' +
           '<ul>' +
             '<li><a href="privacy.html">Privacy Policy</a></li>' +
             '<li><a href="terms.html">Terms of Use</a></li>' +
@@ -73,8 +66,7 @@
         '</div>' +
 
         '<div class="f-legal">' +
-          '<p>HOK&reg; is a registered trademark of RWE. HOK&reg; Activated Lignite is manufactured by RWE in Germany. CGS Carbon, Inc. supplies and distributes HOK&reg; and is not the manufacturer of the product. Birchtech and SEA&reg; are trademarks of Birchtech Corp. All other trademarks are the property of their respective owners.</p>' +
-          '<p>Product information on this site is summarized from documentation published by the manufacturer and is provided for general guidance only. It is not a specification. Request the current datasheet and safety data sheet for the grade you intend to use, and validate performance for your own water, process, and compliance requirements.</p>' +
+          '<p>HOK&reg; is a registered trademark of its respective owner. <span class="ph">[Trademark attribution wording to be confirmed]</span></p>' +
         '</div>' +
 
       '</div>' +

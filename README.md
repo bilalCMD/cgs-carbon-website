@@ -1,22 +1,25 @@
-# CGS Carbon — Website
+# Columbiana Grinding Services — Website
 
-Multi-page static website for **CGS Carbon, Inc.**, a subsidiary of [Birchtech](https://www.birchtech.com/),
-supplier of HOK® Activated Lignite (manufactured by RWE, Germany) for water and gas treatment.
+Multi-page static website for **Columbiana Grinding Services, LLC** — processing activated carbon
+for various industries, established 2008, specializing in HOK® Activated Lignite.
 
-Design follows the Birchtech parent-brand system: teal `#1D7686` on white, Inter type with tight
-tracking, charcoal footer.
+## Content rule
+
+All copy on this site is limited to statements verified against the company's official website,
+[columbianagrinding.com](https://columbianagrinding.com/). Anything that could not be verified is
+**not published as fact** — it appears as a dashed "to be confirmed" marker instead. When adding
+copy, keep to this rule: if a statement cannot be located on the official site or confirmed by CGS,
+mark it TO CONFIRM rather than writing around it.
 
 ## Structure
 
 ```
 ├── index.html                  Home
-├── hok-activated-lignite.html  Product: overview, grades, technical data, supply
-├── applications.html           Biological, adsorptive, industrial, drinking water, gas
-├── industries.html             Sectors served + duty matrix
-├── about.html                  Company, parent company (Birchtech), manufacturing
-├── resources.html              Documentation, FAQ, glossary
-├── news.html                   Press releases + insights
-├── contact.html                Inquiry form (front-end prototype)
+├── about.html                  Company, history, specialty, location
+├── services.html               Activated carbon processing
+├── hok-activated-lignite.html  HOK® Activated Lignite specialty
+├── industries.html             Various industries
+├── contact.html                Address, phone, enquiry form
 ├── privacy.html / terms.html   Legal pages
 ├── partials/
 │   ├── header.js               Shared header/nav — edit once, applies to all pages
@@ -24,9 +27,9 @@ tracking, charcoal footer.
 └── assets/
     ├── css/
     │   ├── global.css          Design system shared by every page
-    │   └── <page>.css          One stylesheet per page (home, hok, applications, …)
-    ├── js/main.js              Nav drawer, mega menus, scroll reveal, form prototype
-    └── img/                    Photos, logo mark, favicon
+    │   └── <page>.css          One stylesheet per page
+    ├── js/main.js              Nav drawer, scroll reveal, form prototype
+    └── img/                    Photography, logo mark, favicon
 ```
 
 ## How header/footer sharing works
@@ -34,7 +37,16 @@ tracking, charcoal footer.
 Each page includes `<script src="partials/header.js"></script>` where the header belongs and
 `<script src="partials/footer.js"></script>` before the closing scripts. The partials inject their
 markup synchronously during parse (no layout flash, works from `file://` and any static host).
-The header also highlights the nav item for the current page.
+The header highlights the nav item for the current page.
+
+## Cache busting
+
+Stylesheets, scripts and reused image filenames carry a `?v=N` suffix. **Bump `N` on every page
+whenever CSS or JS changes**, otherwise hosts and browsers keep serving the previous version:
+
+```
+grep -rl '?v=4' *.html | xargs sed -i 's/?v=4/?v=5/g'
+```
 
 ## Running locally
 
@@ -46,23 +58,25 @@ python -m http.server 8000
 
 ## Photography
 
-Every section has its own photo — 23 in total, one per slot, no image reused across two places.
-All are 1920px-wide JPEGs from [Unsplash](https://unsplash.com) (Unsplash License: free for
-commercial use, attribution not required). Below-the-fold images carry `loading="lazy"`.
+Stock stand-ins from [Unsplash](https://unsplash.com) (Unsplash License), 1920px wide, one photo
+per slot. Below-the-fold images are lazy-loaded. Replace these with real Columbiana Grinding
+Services facility and product photography before launch.
 
-Product shots (`hok-granules*`, `hok-powder*`) are photographed on white and use the
-`.media-obj.on-light` treatment: the shot is blended onto a tinted ground with `mix-blend-mode`
-so the material floats, with the caption in its own light panel instead of a dark gradient.
+## Before launch — content QA
 
-These are stand-ins. Replace them with real CGS Carbon and RWE plant photography before launch —
-particularly the product shots, which should show actual HOK® grades.
+Confirm against the current official website, then update the copy and remove the markers:
 
-## Before launch
+- [ ] Exact current list of services under the site's "Our Services" section
+- [ ] Current phone number (330-457-2599 shown; confirm on the live site)
+- [ ] Current email address
+- [ ] Whether the site names specific industries or applications
+- [ ] Whether the site lists grinding, pulverizing, screening, blending, packaging or equipment
+- [ ] Whether the site states technical specifications or particle-size ranges
+- [ ] Whether the site states certifications, approvals or regulatory claims
+- [ ] HOK® manufacturer / trademark attribution wording
+- [ ] Whether the site carries customer names, logos, testimonials or case studies
+- [ ] Effective dates and legal review for the Privacy Policy and Terms of Use
+- [ ] Connect the contact form to a backend (currently a front-end prototype)
 
-Placeholder markers (dashed boxes, `[like this]`) flag facts to confirm: contact details,
-leadership, exact grade designations, legal effective dates, and the form backend. Swap the
-stock photography for licensed CGS Carbon imagery, and consider serving WebP/AVIF variants —
-the JPEG set totals roughly 10 MB.
-
-`CGS Carbon Website Sample.html` is the original single-file design reference the site was
-split from.
+`CGS Carbon Website Sample.html` is the original single-file design reference the layout was
+derived from. Its copy is superseded by the verified content above.

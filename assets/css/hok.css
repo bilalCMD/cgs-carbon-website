@@ -1,9 +1,9 @@
 /* ============================================================
-   CGS Carbon — HOK® Activated Lignite product page styles
+   Columbiana Grinding Services — HOK® Activated Lignite product page styles
    Grade cards, technical reference table, supply section.
    ============================================================ */
 
-.page-hero.on-photo{background-image:url(../img/hok-hero.jpg)}
+.page-hero.on-photo{background-image:url(../img/hok-process.jpg)}
 
 /* ---------- grade cards ---------- */
 .grade-card{position:relative}
