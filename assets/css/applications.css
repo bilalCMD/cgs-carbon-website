@@ -1,13 +1,9 @@
 /* ============================================================
-   Columbiana Grinding Services — services page styles
-   Service summary cards and the to-be-confirmed notice.
+   Columbiana Grinding Services — applications page styles
+   Alternating application sections, in-page jump nav.
    ============================================================ */
 
-.page-hero.on-photo{background-image:url(../img/resources-hero.jpg)}
-
-/* ---------- service cards ---------- */
-.svc-card .kind,.card-teal .kind{font-size:.72rem;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.page-hero.on-photo{background-image:url(../img/apps-hero.jpg)}
 
 /* ---------- in-page jump nav ---------- */
 .jumpnav{position:sticky;top:82px;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
@@ -17,4 +13,14 @@
 .jumpnav a{display:inline-block;padding:9px 16px;border-radius:999px;font-size:.88rem;
   font-weight:600;color:var(--slate);letter-spacing:-.01em;white-space:nowrap}
 .jumpnav a:hover{background:var(--tint);color:var(--teal-dark);text-decoration:none}
-@media(max-width:900px){.jumpnav{top:72px}}
+
+/* ---------- application sections ---------- */
+.app-section{border-top:1px solid var(--line)}
+.app-section:first-of-type{border-top:0}
+.app-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:600;
+  letter-spacing:.185em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
+.app-kicker .dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+
+@media(max-width:900px){
+  .jumpnav{top:72px}
+}

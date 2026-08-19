@@ -32,10 +32,13 @@
             '</ul>' +
           '</div>' +
           '<div>' +
-            '<h2>Specialty</h2>' +
+            '<h2>Services</h2>' +
             '<ul>' +
+              '<li><a href="services.html">Activated carbon processing</a></li>' +
               '<li><a href="hok-activated-lignite.html">HOK&reg; Activated Lignite</a></li>' +
-              '<li><a href="services.html">Activated Carbon Processing</a></li>' +
+              '<li><a href="applications.html">Applications</a></li>' +
+              '<li><a href="resources.html">Resources</a></li>' +
+              '<li><a href="news.html">News &amp; insights</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
