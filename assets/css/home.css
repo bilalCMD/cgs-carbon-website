@@ -116,3 +116,33 @@
 @media(max-width:620px){
   .spec-bar li{font-size:.58rem;letter-spacing:.08em;padding:10px 4px}
 }
+
+
+/* ---------- hero: layered ground ---------- */
+.hero{background:
+  radial-gradient(1100px 520px at 84% 6%,rgba(29,118,134,.13),transparent 62%),
+  radial-gradient(700px 380px at 6% 92%,rgba(29,118,134,.07),transparent 60%),
+  linear-gradient(180deg,var(--tint),#fff 74%)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(90deg,rgba(29,118,134,.055) 1px,transparent 1px);
+  background-size:120px 100%;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 72%);
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.55),transparent 72%)}
+.hero-media img{box-shadow:0 30px 70px -34px rgba(10,46,54,.5)}
+
+/* ---------- fact strip: figures sit on a tinted ground ---------- */
+.herofacts{background:linear-gradient(180deg,#fff,var(--tint))}
+.herofacts li{position:relative;transition:background .25s var(--ease)}
+.herofacts li:hover{background:rgba(29,118,134,.04)}
+.herofacts .k{color:var(--teal-ink)}
+.herofacts li::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--teal);transition:width .4s var(--ease)}
+.herofacts li:hover::after{width:100%}
+
+/* ---------- feature panels: corner label ---------- */
+.panel-inner{position:relative}
+.panel h2{position:relative;display:inline-block}
+.panel h2::after{content:"";display:block;width:52px;height:3px;background:#fff;
+  border-radius:2px;margin-top:16px;opacity:.85;
+  transform:scaleX(.35);transform-origin:left;transition:transform .5s var(--ease)}
+.panel:hover h2::after{transform:scaleX(1)}

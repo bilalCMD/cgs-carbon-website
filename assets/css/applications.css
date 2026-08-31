@@ -30,3 +30,10 @@
 .app-block:first-of-type{border-top:0;padding-top:0}
 .app-h{font-size:1.45rem;margin-bottom:14px;letter-spacing:-.03em}
 .app-block p{color:var(--slate)}
+
+
+/* ---------- industry blocks: number the sequence ---------- */
+.app-block{position:relative}
+.app-h{position:relative}
+.app-h::after{content:"";display:block;width:46px;height:3px;border-radius:2px;
+  background:var(--teal);margin-top:14px}

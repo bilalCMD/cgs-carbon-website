@@ -28,3 +28,10 @@
   color:var(--slate)}
 .spec-card li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:2px;
   background:var(--teal)}
+
+
+/* ---------- spec cards get a numbered, technical feel ---------- */
+.spec-card{background:linear-gradient(180deg,#fff,#FBFDFD)}
+.spec-card .kind{display:inline-block;background:rgba(29,118,134,.09);
+  padding:6px 11px;border-radius:2px}
+.spec-card li{font-variant-numeric:tabular-nums}

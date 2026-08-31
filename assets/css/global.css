@@ -588,3 +588,103 @@ main{animation:pageIn .55s var(--ease) both}
   .site-header,.site-footer,.topbar,.btns,.navscrim{display:none}
   body{font-size:11pt;color:#000}
 }
+
+
+/* ============================================================
+   DESIGN LAYER
+   Depth, texture and rhythm on top of the base system.
+   ============================================================ */
+
+/* ---------- sections get a subtle ground rather than flat white ---------- */
+.bg-tint{background:
+  radial-gradient(900px 420px at 12% 0%,rgba(29,118,134,.055),transparent 60%),
+  linear-gradient(180deg,var(--tint),#fff)}
+.bg-dark{background:
+  radial-gradient(760px 420px at 88% 12%,rgba(29,118,134,.28),transparent 62%),
+  var(--dark)}
+
+/* a hairline rule that fades out, used to separate stacked sections */
+.section-rule{height:1px;border:0;margin:0;background:
+  linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent)}
+
+/* ---------- eyebrow gets a lead-in rule ---------- */
+.eyebrow{display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--teal);flex:none;
+  border-radius:2px}
+.center .eyebrow,.center .section-head .eyebrow{justify-content:center}
+.bg-dark .eyebrow::before,.on-photo .eyebrow::before{background:#7FC5D3}
+
+/* ---------- headings: accent the closing full stop ---------- */
+h2 .tone,h1 .tone{color:var(--teal)}
+
+/* ---------- cards ---------- */
+.card{position:relative;overflow:hidden}
+/* a teal wedge that grows from the top-left corner on hover */
+.card::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--teal-deep));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s var(--ease)}
+.card:hover::before{transform:scaleX(1)}
+.card-teal::before,.card-dark::before{background:linear-gradient(90deg,#fff,rgba(255,255,255,.35))}
+.card .icon{padding:9px;box-sizing:content-box;border-radius:var(--r);
+  background:rgba(29,118,134,.08)}
+.card-teal .icon,.card-dark .icon{background:rgba(255,255,255,.12)}
+
+/* ---------- checks: teal ticks in a soft square, not a circle ---------- */
+.checks li{padding-left:38px}
+.checks li::before{width:24px;height:24px;border-radius:6px;top:2px;
+  background:rgba(29,118,134,.10)}
+.checks li::after{left:8px;top:9px}
+
+/* ---------- steps: connect the numbers with a vertical rule ---------- */
+.steps li::before{background:#fff;z-index:1}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:23px;top:76px;bottom:-6px;
+  width:1px;background:var(--line)}
+
+/* ---------- tables ---------- */
+.tablewrap{box-shadow:0 1px 2px rgba(33,33,33,.03),0 18px 44px -30px rgba(10,46,54,.28)}
+thead th{background:linear-gradient(180deg,var(--tint),#F1F6F7)}
+tbody tr{transition:background .2s var(--ease)}
+td.num{font-weight:600;color:var(--ink)}
+
+/* ---------- page hero: deeper treatment ---------- */
+.page-hero{position:relative;overflow:hidden}
+.page-hero:not(.on-photo){background:
+  radial-gradient(1000px 460px at 88% -10%,rgba(29,118,134,.10),transparent 62%),
+  linear-gradient(180deg,var(--tint),#fff)}
+.page-hero.on-photo::after{background:
+  linear-gradient(100deg,rgba(10,46,54,.95) 4%,rgba(10,46,54,.78) 52%,rgba(10,46,54,.55) 100%)}
+/* a fine grid overlay gives the photo heroes some structure */
+.page-hero.on-photo .wrap::before{content:"";position:absolute;inset:-40px 0;z-index:-1;
+  background-image:linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:110px 100%;pointer-events:none}
+.page-hero h1{max-width:20ch}
+
+/* ---------- forms ---------- */
+.form-card{box-shadow:0 1px 2px rgba(33,33,33,.03),0 26px 60px -40px rgba(10,46,54,.3)}
+.field label{letter-spacing:.01em}
+.field input,.field select,.field textarea{background:#FCFDFD}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:#AEC0C4}
+
+/* ---------- contact aside ---------- */
+.contact-aside .card{border-left:3px solid var(--teal)}
+
+/* ---------- footer ---------- */
+.site-footer{background:
+  radial-gradient(700px 360px at 92% 0%,rgba(29,118,134,.22),transparent 60%),
+  var(--dark)}
+.f-parent{background:linear-gradient(150deg,var(--dark-2),#242C2F);
+  border:1px solid rgba(255,255,255,.07)}
+.f-parent .tickers{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
+.f-parent .tickers span,.f-parent .tickers li{font-size:.68rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;color:#7FC5D3;
+  border:1px solid rgba(127,197,211,.38);border-radius:2px;padding:6px 10px}
+
+/* ---------- parent panel (about page) ---------- */
+.parent-panel{background:
+  radial-gradient(600px 320px at 90% 6%,rgba(29,118,134,.3),transparent 62%),var(--dark)}
+
+/* ---------- selection + scrollbar polish ---------- */
+@supports (scrollbar-color: auto) {
+  html{scrollbar-color:#C4D3D6 transparent}
+}
