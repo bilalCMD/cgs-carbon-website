@@ -24,3 +24,9 @@
 @media(max-width:900px){
   .jumpnav{top:72px}
 }
+
+/* ---------- industry blocks ---------- */
+.app-block{padding:56px 0;border-top:1px solid var(--line)}
+.app-block:first-of-type{border-top:0;padding-top:0}
+.app-h{font-size:1.45rem;margin-bottom:14px;letter-spacing:-.03em}
+.app-block p{color:var(--slate)}

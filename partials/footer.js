@@ -1,6 +1,6 @@
 /* ============================================================
    CGS Carbon — shared site footer partial.
-   Copy is limited to statements verified on columbianagrinding.com.
+   Copy follows the Website Copy Deck (v8), section 8.
    ============================================================ */
 (function () {
   'use strict';
@@ -15,7 +15,7 @@
             '<img src="assets/img/logo-mark.svg" alt="" width="44" height="44">' +
             '<span class="brand-txt">' +
               '<span class="brand-name">CGS <span>Carbon</span></span>' +
-              '<span class="brand-sub">A Birchtech Company</span>' +
+              '<span class="brand-sub">A Birchtech Subsidiary</span>' +
             '</span>' +
           '</a>' +
           '<a class="btn btn-primary" href="contact.html">Get in touch' + ARROW + '</a>' +
@@ -26,37 +26,34 @@
             '<h2>Company</h2>' +
             '<ul>' +
               '<li><a href="about.html">About</a></li>' +
-              '<li><a href="services.html">Services</a></li>' +
-              '<li><a href="industries.html">Industries</a></li>' +
+              '<li><a href="about.html#facility">Our facility</a></li>' +
               '<li><a href="contact.html">Contact</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
-            '<h2>Services</h2>' +
+            '<h2>What we do</h2>' +
             '<ul>' +
-              '<li><a href="services.html">Activated carbon processing</a></li>' +
-              '<li><a href="hok-activated-lignite.html">HOK&reg; Activated Lignite</a></li>' +
-              '<li><a href="applications.html">Applications</a></li>' +
-              '<li><a href="resources.html">Resources</a></li>' +
-              '<li><a href="news.html">News &amp; insights</a></li>' +
+              '<li><a href="services.html">Services &amp; capabilities</a></li>' +
+              '<li><a href="hok-activated-lignite.html">HOK&reg; &amp; products</a></li>' +
+              '<li><a href="applications.html">Applications &amp; industries</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
             '<h2>Contact</h2>' +
             '<ul>' +
               '<li>41738 Esterly Drive</li>' +
+              '<li>PO Box 26</li>' +
               '<li>Columbiana, Ohio 44408</li>' +
               '<li><a href="tel:+13304572599">330-457-2599</a></li>' +
             '</ul>' +
-            '<div class="f-contact"><span class="ph">[Email address to be confirmed]</span></div>' +
+            '<div class="f-contact"><span class="ph">[info@cgscarbon.com to be confirmed]</span></div>' +
           '</div>' +
           '<div>' +
             '<div class="f-parent">' +
               '<div class="lbl">Parent company</div>' +
-              '<span style="display:inline-block;color:#fff;font-weight:700;letter-spacing:.14em;font-size:.95rem;margin-bottom:14px">BIRCHTECH</span>' +
+              '<span style="display:inline-block;color:#fff;font-weight:700;letter-spacing:.14em;font-size:.95rem;margin-bottom:10px">BIRCHTECH</span>' +
+              '<div class="tickers"><span>NYSE American: BCHT</span><span>TSX: BCHT</span></div>' +
               '<p>CGS Carbon, Inc. is a subsidiary of Birchtech. <a href="https://www.birchtech.com/" rel="noopener">birchtech.com</a></p>' +
-              '<p style="margin-top:12px">Processing Activated Carbon for Various Industries. Established in 2008. Specializing in HOK&reg; Activated Lignite.</p>' +
-              '<p style="margin-top:12px">Columbiana, Ohio, close to the Ohio-Pennsylvania state line and approximately 20 miles south of Youngstown.</p>' +
             '</div>' +
           '</div>' +
         '</div>' +
@@ -64,14 +61,14 @@
         '<div class="f-bottom">' +
           '<div>&copy; <span data-year>2026</span> CGS Carbon, Inc. All rights reserved.</div>' +
           '<ul>' +
-            '<li><a href="privacy.html">Privacy Policy</a></li>' +
-            '<li><a href="terms.html">Terms of Use</a></li>' +
+            '<li><a href="legal.html#privacy">Privacy Policy</a></li>' +
+            '<li><a href="legal.html#terms">Terms of Use</a></li>' +
             '<li><a href="contact.html">Contact</a></li>' +
           '</ul>' +
         '</div>' +
 
         '<div class="f-legal">' +
-          '<p>HOK&reg; is a registered trademark of its respective owner. <span class="ph">[Trademark attribution wording to be confirmed]</span></p>' +
+          '<p>HOK&reg; is a registered trademark of its respective owner.</p>' +
         '</div>' +
 
       '</div>' +

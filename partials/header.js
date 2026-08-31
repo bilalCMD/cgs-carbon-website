@@ -1,5 +1,6 @@
 /* ============================================================
    CGS Carbon — shared site header partial.
+   Copy follows the Website Copy Deck (v8).
    Edit the markup here once; every page picks it up via
    <script src="partials/header.js"></script>.
    ============================================================ */
@@ -10,7 +11,7 @@
 
   var html =
     '<div class="topbar"><div class="wrap">' +
-      '<div><strong>CGS Carbon, Inc.</strong> &mdash; a subsidiary of Birchtech</div>' +
+      '<div><strong>CGS Carbon, Inc.</strong></div>' +
       '<div class="tb-r">Processing Activated Carbon &middot; Established 2008 &middot; Columbiana, Ohio</div>' +
     '</div></div>' +
 
@@ -20,51 +21,39 @@
           '<img src="assets/img/logo-mark.svg" alt="" width="42" height="42">' +
           '<span class="brand-txt">' +
             '<span class="brand-name">CGS <span>Carbon</span></span>' +
-            '<span class="brand-sub">A Birchtech Company</span>' +
+            '<span class="brand-sub">A Birchtech Subsidiary</span>' +
           '</span>' +
         '</a>' +
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +
         '<nav class="nav" id="primary-nav" aria-label="Primary">' +
           '<ul>' +
 
-            '<li class="has-mega" data-page="services.html hok-activated-lignite.html">' +
+            '<li class="has-mega" data-page="services.html">' +
               '<button class="navlink" type="button" aria-expanded="false">Services' + CHEV + '</button>' +
               '<ul class="mega">' +
-                '<li><a href="services.html"><span class="mt">Activated carbon processing</span><span class="md">What we do and how to start</span></a></li>' +
-                '<li><a href="services.html#grinding"><span class="mt">Grinding carbon</span><span class="md">The specialization developed since 2008</span></a></li>' +
-                '<li><a href="services.html#requirements"><span class="mt">Discussing a requirement</span><span class="md">What to tell us about your material</span></a></li>' +
-                '<li><a href="hok-activated-lignite.html"><span class="mt">HOK&reg; Activated Lignite</span><span class="md">Our stated specialty product</span></a></li>' +
+                '<li><a href="services.html"><span class="mt">Services &amp; capabilities</span><span class="md">Pulverizing, screening and blending to spec</span></a></li>' +
+                '<li><a href="services.html#capabilities"><span class="mt">Built around the ball mill</span><span class="md">6&#39;x12&#39; ball mill with dynamic classifier</span></a></li>' +
+                '<li><a href="services.html#logistics"><span class="mt">Packaging &amp; delivery</span><span class="md">From supersacks to rail car</span></a></li>' +
+                '<li><a href="services.html#requirements"><span class="mt">Tell us about your material</span><span class="md">What we need to know to quote</span></a></li>' +
               '</ul>' +
             '</li>' +
+
+            '<li data-page="hok-activated-lignite.html"><a class="navlink" href="hok-activated-lignite.html">HOK&reg; &amp; Products</a></li>' +
 
             '<li class="has-mega" data-page="applications.html">' +
-              '<button class="navlink" type="button" aria-expanded="false">Applications' + CHEV + '</button>' +
+              '<button class="navlink" type="button" aria-expanded="false">Applications &amp; Industries' + CHEV + '</button>' +
               '<ul class="mega">' +
-                '<li><a href="applications.html#water"><span class="mt">Water treatment</span><span class="md">Where activated carbon is applied in water</span></a></li>' +
-                '<li><a href="applications.html#air"><span class="mt">Air &amp; gas purification</span><span class="md">Vapour-phase and gas-stream duty</span></a></li>' +
-                '<li><a href="applications.html#process"><span class="mt">Process &amp; product purification</span><span class="md">Decolourising and purification duty</span></a></li>' +
-                '<li><a href="applications.html#environmental"><span class="mt">Environmental &amp; industrial</span><span class="md">Remediation and industrial streams</span></a></li>' +
+                '<li><a href="applications.html"><span class="mt">Applications &amp; industries</span><span class="md">From water treatment to steel production</span></a></li>' +
+                '<li><a href="applications.html#industries"><span class="mt">Where our carbon goes to work</span><span class="md">Water, air, process and environmental duty</span></a></li>' +
               '</ul>' +
             '</li>' +
-
-            '<li data-page="industries.html"><a class="navlink" href="industries.html">Industries</a></li>' +
 
             '<li class="has-mega" data-page="about.html">' +
               '<button class="navlink" type="button" aria-expanded="false">About' + CHEV + '</button>' +
               '<ul class="mega">' +
                 '<li><a href="about.html"><span class="mt">About the company</span><span class="md">Privately held, established in 2008</span></a></li>' +
-                '<li><a href="about.html#specialty"><span class="mt">Our specialty</span><span class="md">HOK&reg; Activated Lignite</span></a></li>' +
-                '<li><a href="about.html#location"><span class="mt">Our facility</span><span class="md">Columbiana, Ohio</span></a></li>' +
-              '</ul>' +
-            '</li>' +
-
-            '<li class="has-mega" data-page="resources.html news.html">' +
-              '<button class="navlink" type="button" aria-expanded="false">Resources' + CHEV + '</button>' +
-              '<ul class="mega">' +
-                '<li><a href="resources.html"><span class="mt">Documentation</span><span class="md">Product and safety documentation on request</span></a></li>' +
-                '<li><a href="resources.html#faq"><span class="mt">FAQ</span><span class="md">Common questions about our processing</span></a></li>' +
-                '<li><a href="resources.html#glossary"><span class="mt">Glossary</span><span class="md">Activated carbon terminology</span></a></li>' +
-                '<li><a href="news.html"><span class="mt">News &amp; insights</span><span class="md">Company updates and working notes</span></a></li>' +
+                '<li><a href="about.html#facility"><span class="mt">Our facility</span><span class="md">Columbiana, Ohio</span></a></li>' +
+                '<li><a href="about.html#birchtech"><span class="mt">Part of Birchtech Corp.</span><span class="md">NYSE American: BCHT | TSX: BCHT</span></a></li>' +
               '</ul>' +
             '</li>' +
 
