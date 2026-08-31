@@ -688,3 +688,10 @@ td.num{font-weight:600;color:var(--ink)}
 @supports (scrollbar-color: auto) {
   html{scrollbar-color:#C4D3D6 transparent}
 }
+
+
+/* ---------- CTA band (heading struck in review; copy recentred) ---------- */
+.cta-band{max-width:720px;margin:0 auto;text-align:center}
+.cta-band .eyebrow{justify-content:center;margin-bottom:16px}
+.cta-band .lead{font-size:clamp(1.2rem,2vw,1.5rem);color:#fff;letter-spacing:-.02em}
+.cta-band .btns{justify-content:center;margin-top:30px}

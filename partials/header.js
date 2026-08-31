@@ -38,7 +38,7 @@
               '</ul>' +
             '</li>' +
 
-            '<li data-page="hok-activated-lignite.html"><a class="navlink" href="hok-activated-lignite.html">HOK&reg; &amp; Products</a></li>' +
+            '<li data-page="hok-activated-lignite.html"><a class="navlink" href="hok-activated-lignite.html">Products</a></li>' +
 
             '<li class="has-mega" data-page="applications.html">' +
               '<button class="navlink" type="button" aria-expanded="false">Applications &amp; Industries' + CHEV + '</button>' +
