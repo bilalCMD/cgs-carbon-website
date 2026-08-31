@@ -51,7 +51,7 @@
             '<li class="has-mega" data-page="about.html">' +
               '<button class="navlink" type="button" aria-expanded="false">About' + CHEV + '</button>' +
               '<ul class="mega">' +
-                '<li><a href="about.html"><span class="mt">About the company</span><span class="md">Privately held, established in 2008</span></a></li>' +
+                '<li><a href="about.html"><span class="mt">About the company</span><span class="md">Ohio-based, established in 2008</span></a></li>' +
                 '<li><a href="about.html#facility"><span class="mt">Our facility</span><span class="md">Columbiana, Ohio</span></a></li>' +
                 '<li><a href="about.html#birchtech"><span class="mt">Part of Birchtech Corp.</span><span class="md">NYSE American: BCHT | TSX: BCHT</span></a></li>' +
               '</ul>' +
