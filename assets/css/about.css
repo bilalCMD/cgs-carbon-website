@@ -29,3 +29,35 @@
 @media(max-width:620px){
   .parent-panel{padding:34px 26px}
 }
+
+
+/* ---------- reactivation callout ----------
+   The 2027 line is the one forward-looking claim in the statement, so it gets
+   its own band rather than sitting as the fourth paragraph in a wall of text. */
+.callout{margin-top:64px;border-radius:var(--r-lg);overflow:hidden;
+  background:linear-gradient(135deg,var(--teal) 0%,var(--teal-deep) 100%);
+  padding:44px 52px;display:grid;grid-template-columns:auto 1fr auto;gap:34px;
+  align-items:center;color:#EAF6F8}
+.callout .co-icon{width:60px;height:60px;border-radius:50%;background:rgba(255,255,255,.16);
+  display:grid;place-items:center}
+.callout .co-icon svg{width:28px;height:28px;stroke:#fff;stroke-width:1.7;fill:none}
+.callout h3{color:#fff;font-size:1.4rem;margin-bottom:10px}
+.callout p{color:#D8EDF1;margin:0;max-width:70ch}
+.callout .co-year{font-size:2.7rem;font-weight:700;color:#fff;letter-spacing:-.05em;
+  line-height:1;text-align:right;white-space:nowrap}
+.callout .co-year span{display:block;font-size:.68rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:#BFE4EA;margin-top:8px}
+
+/* ---------- closing statement ---------- */
+.about-close{max-width:820px;margin:58px auto 0;text-align:center;
+  font-size:clamp(1.15rem,1.9vw,1.45rem);line-height:1.55;letter-spacing:-.02em;
+  color:var(--ink);font-weight:500}
+
+@media(max-width:900px){
+  .callout{grid-template-columns:auto 1fr;gap:22px;padding:34px 28px;margin-top:48px}
+  .callout .co-year{grid-column:1 / -1;text-align:left;font-size:2.2rem}
+}
+@media(max-width:620px){
+  .callout{grid-template-columns:1fr}
+  .about-close{margin-top:44px}
+}
