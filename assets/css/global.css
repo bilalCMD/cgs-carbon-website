@@ -695,3 +695,8 @@ td.num{font-weight:600;color:var(--ink)}
 .cta-band .eyebrow{justify-content:center;margin-bottom:16px}
 .cta-band .lead{font-size:clamp(1.2rem,2vw,1.5rem);color:#fff;letter-spacing:-.02em}
 .cta-band .btns{justify-content:center;margin-top:30px}
+
+
+/* ---------- footer company statement (short version) ---------- */
+.f-about{max-width:78ch;margin:0 0 8px;padding-bottom:34px;font-size:.9rem;line-height:1.7;
+  color:var(--silver)}

@@ -21,7 +21,7 @@
           '<img src="assets/img/logo-mark.svg" alt="" width="42" height="42">' +
           '<span class="brand-txt">' +
             '<span class="brand-name">CGS <span>Carbon</span></span>' +
-            '<span class="brand-sub">A Birchtech Subsidiary</span>' +
+            '<span class="brand-sub">Processing Activated Carbon</span>' +
           '</span>' +
         '</a>' +
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +
@@ -53,7 +53,6 @@
               '<ul class="mega">' +
                 '<li><a href="about.html"><span class="mt">About the company</span><span class="md">Ohio-based, established in 2008</span></a></li>' +
                 '<li><a href="about.html#facility"><span class="mt">Our facility</span><span class="md">Columbiana, Ohio</span></a></li>' +
-                '<li><a href="about.html#birchtech"><span class="mt">Part of Birchtech Corp.</span><span class="md">NYSE American: BCHT | TSX: BCHT</span></a></li>' +
               '</ul>' +
             '</li>' +
 

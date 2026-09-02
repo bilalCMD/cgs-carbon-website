@@ -110,15 +110,25 @@
     var dur = 1100, start = null;
     // long values (a year) look better counting from a near miss than from zero
     var from = target > 999 ? target - 40 : 0;
+    var settled = false;
+    function settle() {
+      if (settled) return;
+      settled = true;
+      el.textContent = target + suffix;   // always land on the real figure
+    }
     function step(ts) {
+      if (settled) return;
       if (start === null) start = ts;
       var t = Math.min((ts - start) / dur, 1);
+      if (t >= 1) { settle(); return; }
       var eased = 1 - Math.pow(1 - t, 3);
-      var val = Math.round(from + (target - from) * eased);
-      el.textContent = val + suffix;
-      if (t < 1) requestAnimationFrame(step);
+      el.textContent = Math.round(from + (target - from) * eased) + suffix;
+      requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
+    // if rAF is throttled or the tab is backgrounded mid-count, don't leave a
+    // wrong number on screen
+    setTimeout(settle, dur + 400);
   }
 
   if (!reduced && 'IntersectionObserver' in window) {

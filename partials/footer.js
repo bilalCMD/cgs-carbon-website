@@ -21,6 +21,8 @@
           '<a class="btn btn-primary" href="contact.html">Get in touch' + ARROW + '</a>' +
         '</div>' +
 
+        '<p class="f-about">CGS Carbon, Inc. (formerly Columbiana Grinding Services) has processed activated carbon from our Columbiana, Ohio, facility since 2008, specializing in processing activated carbon and supplying HOK&reg; Activated Lignite for water treatment, emissions control, and environmental remediation industries.</p>' +
+
         '<div class="f-cols">' +
           '<div>' +
             '<h2>Company</h2>' +
