@@ -53,7 +53,7 @@
           '<div>' +
             '<div class="f-parent">' +
               '<div class="lbl">Parent company</div>' +
-              '<span style="display:inline-block;color:#fff;font-weight:700;letter-spacing:.14em;font-size:.95rem;margin-bottom:10px">BIRCHTECH</span>' +
+              '<img class="bt-logo" src="assets/img/birchtech-logo-light.svg" alt="Birchtech" width="150" height="53" loading="lazy">' +
               '<div class="tickers"><span>NYSE American: BCHT</span><span>TSX: BCHT</span></div>' +
               '<p>CGS Carbon, Inc. is a subsidiary of Birchtech. <a href="https://www.birchtech.com/" rel="noopener">birchtech.com</a></p>' +
             '</div>' +

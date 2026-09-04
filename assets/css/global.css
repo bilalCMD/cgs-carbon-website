@@ -693,13 +693,54 @@ td.num{font-weight:600;color:var(--ink)}
 }
 
 
-/* ---------- CTA band (heading struck in review; copy recentred) ---------- */
-.cta-band{max-width:720px;margin:0 auto;text-align:center}
-.cta-band .eyebrow{justify-content:center;margin-bottom:16px}
-.cta-band .lead{font-size:clamp(1.2rem,2vw,1.5rem);color:#fff;letter-spacing:-.02em}
-.cta-band .btns{justify-content:center;margin-top:30px}
 
 
 /* ---------- footer company statement (short version) ---------- */
 .f-about{max-width:78ch;margin:0 0 8px;padding-bottom:34px;font-size:.9rem;line-height:1.7;
   color:var(--silver)}
+
+
+/* ============================================================
+   CLOSING CTA BAND
+   Photographic ground under a teal duotone, with the contact
+   details a visitor needs at the moment they decide to call.
+   ============================================================ */
+.cta{position:relative;overflow:hidden;padding:104px 0;border-top:3px solid var(--teal);
+  background-color:#0D4A5A;background-image:url(../img/ind-hero.jpg);
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  /* luminosity blend turns the plant photo into a teal duotone, so the
+     texture reads without the detail fighting the headline */
+  background-blend-mode:luminosity}
+.cta::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(104deg,rgba(7,38,46,.93) 0%,rgba(7,38,46,.78) 42%,rgba(7,38,46,.48) 100%)}
+.cta .wrap{position:relative;z-index:1}
+.cta-inner{display:grid;grid-template-columns:1.22fr .78fr;gap:72px;align-items:center}
+.cta-copy .eyebrow{color:#8FD3DF}
+.cta-copy h2{color:#fff;font-size:clamp(2.1rem,3.7vw,3.1rem);max-width:18ch}
+.cta-copy .lead{color:#D7E7EA;margin-top:20px;max-width:46ch}
+.cta-copy .btns{margin-top:34px}
+
+.cta-meta{list-style:none;margin:0;padding:30px 34px;display:grid;gap:22px;
+  background:rgba(7,38,46,.72);border:1px solid rgba(143,211,223,.28);
+  border-radius:var(--r-lg);backdrop-filter:blur(10px) saturate(120%);
+  box-shadow:0 24px 60px -30px rgba(0,0,0,.6)}
+.cta-meta li{margin:0;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12)}
+.cta-meta li:last-child{padding-bottom:0;border-bottom:0}
+.cta-meta .cm-k{display:block;font-size:.68rem;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:#8FD3DF;margin-bottom:7px}
+.cta-meta .cm-v{display:block;font-size:1.12rem;font-weight:600;color:#fff;
+  letter-spacing:-.02em}
+a.cm-v:hover{color:#8FD3DF;text-decoration:none}
+
+@media(max-width:900px){
+  .cta{padding:76px 0}
+  .cta-inner{grid-template-columns:1fr;gap:40px}
+  .cta-meta{padding:26px 24px}
+}
+@media(max-width:620px){
+  .cta{padding:64px 0}
+  .cta-copy h2{max-width:none}
+}
+
+/* ---------- parent company logo ---------- */
+.f-parent .bt-logo{width:150px;height:auto;margin-bottom:14px;opacity:.95}
