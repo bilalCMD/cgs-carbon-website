@@ -48,7 +48,6 @@
               '<li>Columbiana, Ohio 44408</li>' +
               '<li><a href="tel:+13304572599">330-457-2599</a></li>' +
             '</ul>' +
-            '<div class="f-contact"><span class="ph">[info@cgscarbon.com to be confirmed]</span></div>' +
           '</div>' +
           '<div>' +
             '<div class="f-parent">' +

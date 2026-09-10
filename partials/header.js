@@ -34,7 +34,7 @@
                 '<li><a href="services.html"><span class="mt">Services &amp; capabilities</span><span class="md">Pulverizing, screening and blending to spec</span></a></li>' +
                 '<li><a href="services.html#capabilities"><span class="mt">Built around the ball mill</span><span class="md">6&#39;x12&#39; ball mill with dynamic classifier</span></a></li>' +
                 '<li><a href="services.html#logistics"><span class="mt">Packaging &amp; delivery</span><span class="md">From supersacks to rail car</span></a></li>' +
-                '<li><a href="services.html#requirements"><span class="mt">Tell us about your material</span><span class="md">What we need to know to quote</span></a></li>' +
+                '<li><a href="services.html#requirements"><span class="mt">Custom processing for your requirements</span><span class="md">What we need to know to quote</span></a></li>' +
               '</ul>' +
             '</li>' +
 

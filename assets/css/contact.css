@@ -34,3 +34,11 @@
   .form-card{padding:26px 22px}
   .row2{grid-template-columns:1fr}
 }
+
+
+/* ---------- form offline notice (backend not yet wired) ---------- */
+.btn[disabled]{opacity:.45;cursor:not-allowed;pointer-events:none}
+.form-offline{margin-top:18px;font-size:.95rem;color:var(--ink);font-weight:500;
+  padding:14px 18px;border-radius:var(--r);background:var(--teal-pale);
+  border:1px solid rgba(29,118,134,.28)}
+.form-offline a{font-weight:700}
