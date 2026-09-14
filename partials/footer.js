@@ -11,14 +11,14 @@
       '<div class="wrap">' +
 
         '<div class="f-top">' +
-          '<a class="f-brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
+          '<a class="f-brand" href="/" aria-label="CGS Carbon &mdash; home">' +
             '<img src="assets/img/logo-mark.svg" alt="" width="44" height="44">' +
             '<span class="brand-txt">' +
               '<span class="brand-name">CGS <span>Carbon</span></span>' +
               '<span class="brand-sub">A Birchtech Subsidiary</span>' +
             '</span>' +
           '</a>' +
-          '<a class="btn btn-primary" href="contact.html">Get in touch' + ARROW + '</a>' +
+          '<a class="btn btn-primary" href="contact">Get in touch' + ARROW + '</a>' +
         '</div>' +
 
         '<p class="f-about">CGS Carbon, Inc. (formerly Columbiana Grinding Services) has processed activated carbon from our Columbiana, Ohio, facility since 2008, specializing in processing activated carbon and supplying HOK&reg; Activated Lignite for water treatment, emissions control, and environmental remediation industries.</p>' +
@@ -27,17 +27,17 @@
           '<div>' +
             '<h2>Company</h2>' +
             '<ul>' +
-              '<li><a href="about.html">About</a></li>' +
-              '<li><a href="about.html#facility">Our facility</a></li>' +
-              '<li><a href="contact.html">Contact</a></li>' +
+              '<li><a href="about">About</a></li>' +
+              '<li><a href="about#facility">Our facility</a></li>' +
+              '<li><a href="contact">Contact</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
             '<h2>What we do</h2>' +
             '<ul>' +
-              '<li><a href="services.html">Services &amp; capabilities</a></li>' +
-              '<li><a href="hok-activated-lignite.html">HOK&reg;</a></li>' +
-              '<li><a href="applications.html">Applications &amp; industries</a></li>' +
+              '<li><a href="services">Services &amp; capabilities</a></li>' +
+              '<li><a href="hok-activated-lignite">HOK&reg;</a></li>' +
+              '<li><a href="applications">Applications &amp; industries</a></li>' +
             '</ul>' +
           '</div>' +
           '<div>' +
@@ -62,9 +62,9 @@
         '<div class="f-bottom">' +
           '<div>&copy; <span data-year>2026</span> CGS Carbon, Inc. All rights reserved.</div>' +
           '<ul>' +
-            '<li><a href="legal.html#privacy">Privacy Policy</a></li>' +
-            '<li><a href="legal.html#terms">Terms of Use</a></li>' +
-            '<li><a href="contact.html">Contact</a></li>' +
+            '<li><a href="legal#privacy">Privacy Policy</a></li>' +
+            '<li><a href="legal#terms">Terms of Use</a></li>' +
+            '<li><a href="contact">Contact</a></li>' +
           '</ul>' +
         '</div>' +
 

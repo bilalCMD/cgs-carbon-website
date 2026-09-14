@@ -11,7 +11,7 @@
   var html =
     '<header class="site-header">' +
       '<div class="wrap hdr">' +
-        '<a class="brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
+        '<a class="brand" href="/" aria-label="CGS Carbon &mdash; home">' +
           '<img src="assets/img/logo-mark.svg" alt="" width="42" height="42">' +
           '<span class="brand-txt">' +
             '<span class="brand-name">CGS <span>Carbon</span></span>' +
@@ -20,14 +20,14 @@
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +
         '<nav class="nav" id="primary-nav" aria-label="Primary">' +
           '<ul>' +
-            '<li data-page="services.html"><a class="navlink" href="services.html">Services</a></li>' +
-            '<li data-page="hok-activated-lignite.html"><a class="navlink" href="hok-activated-lignite.html">HOK&reg;</a></li>' +
-            '<li data-page="applications.html"><a class="navlink" href="applications.html">Applications &amp; Industries</a></li>' +
-            '<li data-page="about.html"><a class="navlink" href="about.html">About</a></li>' +
+            '<li data-page="services"><a class="navlink" href="services">Services</a></li>' +
+            '<li data-page="hok-activated-lignite"><a class="navlink" href="hok-activated-lignite">HOK&reg;</a></li>' +
+            '<li data-page="applications"><a class="navlink" href="applications">Applications &amp; Industries</a></li>' +
+            '<li data-page="about"><a class="navlink" href="about">About</a></li>' +
           '</ul>' +
-          '<div class="mob-cta"><a class="btn btn-primary" href="contact.html">Contact Us' + ARROW + '</a></div>' +
+          '<div class="mob-cta"><a class="btn btn-primary" href="contact">Contact Us' + ARROW + '</a></div>' +
         '</nav>' +
-        '<div class="hdr-cta"><a class="btn btn-primary" href="contact.html">Contact Us' + ARROW + '</a></div>' +
+        '<div class="hdr-cta"><a class="btn btn-primary" href="contact">Contact Us' + ARROW + '</a></div>' +
       '</div>' +
     '</header>' +
     '<div class="navscrim"></div>';
@@ -35,7 +35,7 @@
   document.currentScript.insertAdjacentHTML('beforebegin', html);
 
   /* Highlight the nav item for the page being viewed */
-  var file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  var file = (location.pathname.split('/').pop() || 'index').toLowerCase().replace(/\.html$/, '');
   var lis = document.querySelectorAll('#primary-nav > ul > li[data-page]');
   for (var i = 0; i < lis.length; i++) {
     if (lis[i].getAttribute('data-page').split(' ').indexOf(file) !== -1) {
