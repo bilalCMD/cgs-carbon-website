@@ -20,8 +20,8 @@
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +
         '<nav class="nav" id="primary-nav" aria-label="Primary">' +
           '<ul>' +
-            '<li data-page="services"><a class="navlink" href="services">Services</a></li>' +
             '<li data-page="hok-activated-lignite"><a class="navlink" href="hok-activated-lignite">HOK&reg;</a></li>' +
+            '<li data-page="services"><a class="navlink" href="services">Services</a></li>' +
             '<li data-page="applications"><a class="navlink" href="applications">Applications &amp; Industries</a></li>' +
             '<li data-page="about"><a class="navlink" href="about">About</a></li>' +
           '</ul>' +
