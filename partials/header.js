@@ -21,7 +21,6 @@
           '<img src="assets/img/logo-mark.svg" alt="" width="42" height="42">' +
           '<span class="brand-txt">' +
             '<span class="brand-name">CGS <span>Carbon</span></span>' +
-            '<span class="brand-sub">Processing Activated Carbon</span>' +
           '</span>' +
         '</a>' +
         '<button class="burger" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span><span></span></button>' +
