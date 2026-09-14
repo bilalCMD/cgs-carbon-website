@@ -9,11 +9,6 @@
   var ARROW = '<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
 
   var html =
-    '<div class="topbar"><div class="wrap">' +
-      '<div><strong>CGS Carbon, Inc.</strong></div>' +
-      '<div class="tb-r">Processing Activated Carbon &middot; Established 2008 &middot; Columbiana, Ohio</div>' +
-    '</div></div>' +
-
     '<header class="site-header">' +
       '<div class="wrap hdr">' +
         '<a class="brand" href="index.html" aria-label="CGS Carbon &mdash; home">' +
