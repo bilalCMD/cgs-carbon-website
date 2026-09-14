@@ -36,7 +36,7 @@
             '<h2>What we do</h2>' +
             '<ul>' +
               '<li><a href="services.html">Services &amp; capabilities</a></li>' +
-              '<li><a href="hok-activated-lignite.html">Products</a></li>' +
+              '<li><a href="hok-activated-lignite.html">HOK&reg;</a></li>' +
               '<li><a href="applications.html">Applications &amp; industries</a></li>' +
             '</ul>' +
           '</div>' +
